@@ -57,17 +57,17 @@ namespace Deliv_1
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             //US Total
-            Console.Out.WriteLine("US: {0:C2} ", usAmount.ToString("C", new CultureInfo("us-US")));
+            Console.Out.WriteLine("\u2022 US: {0:C2} ", usAmount.ToString("C", new CultureInfo("us-US")));
 
             //Sweden Total
-            Console.Out.WriteLine("Swedish: {0:C2}", usAmount.ToString("C", new CultureInfo("sv-SE")));
+            Console.Out.WriteLine("\u2022 Swedish: {0:C2}", usAmount.ToString("C", new CultureInfo("sv-SE")));
 
             //Japan Total
-            Console.Out.WriteLine("Japanese: {0} ", usAmount.ToString("C", new CultureInfo("ja-JP")));
+            Console.Out.WriteLine("\u2022 Japanese: {0} ", usAmount.ToString("C", new CultureInfo("ja-JP")));
 
             //Thailand Total
-            Console.Out.WriteLine("Thai: {0:C2}", usAmount.ToString("C", new CultureInfo("th-TH")));
-
+            Console.Out.WriteLine("\u2022 Thai: {0:C2}", usAmount.ToString("C", new CultureInfo("th-TH")));
+           
 
             Console.ReadKey();
         }
